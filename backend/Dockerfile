@@ -1,5 +1,9 @@
 FROM python:3.11.3-slim-bullseye
 
+RUN pip install uvicorn
+RUN pip install  fastapi
+
+
 RUN apt-get update && apt-get install -y build-essential
 
 RUN mkdir -p /usr/src/csms
